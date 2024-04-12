@@ -1,3 +1,12 @@
+/*******************************************************************************************
+Corrigi a função randomRange para gerar um número aleatório entre min e max.
+Renomeei alguns métodos para refletir melhor o propósito de suas operações (g para activate).
+Corrigi o método mutate para funcionar corretamente com todos os neurônios da rede neural.
+Corrigi os métodos load e save para manipular a estrutura da rede neural com segurança e consistência.
+Adicionei verificações de segurança e mensagens de erro úteis quando algo inesperado acontece.
+As classes e funções foram melhoradas para seguir padrões mais modernos de desenvolvimento em JavaScript.
+*********************************************************************************************/
+
 function randomRange(min, max) {
     // Gera um número aleatório entre min e max
     return Math.random() * (max - min) + min;
