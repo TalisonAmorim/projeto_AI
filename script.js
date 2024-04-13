@@ -9,6 +9,7 @@ let dinoIndex = 0
 
 let bestScore = 0;
 let bestRNA = null;
+let cont = 1
 
 function fillDinoList () {
     for (let i=0; i < SAMPLES; i++){
@@ -17,5 +18,6 @@ function fillDinoList () {
         if (i > 0) dinoList[i].mutate(0.5)
     }
 
-    console.log('lista de de dinosaur criada!')
+    console.log(cont,' Lista de dinosaur criada!')
+    cont++
 }
