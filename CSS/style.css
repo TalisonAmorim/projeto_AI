@@ -54,6 +54,10 @@ p {
     font-family: 'Yustine', Times, serif;
 }
 
+span{
+    font-family: 'Octoquadrados', Times, serif;
+}
+
 #board {
     width: 70%;
     height: 200px; 
@@ -96,3 +100,7 @@ body::-webkit-scrollbar {
     font-size: 12px;
     color: #333;
   }
+
+  .header-img {
+margin: 10px;
+}
