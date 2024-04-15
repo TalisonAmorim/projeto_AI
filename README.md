@@ -75,6 +75,3 @@ Se você encontrar erros ou quiser melhorar este projeto, sinta-se à vontade pa
 
 Este projeto é de domínio público ou licenciado sob uma licença permissiva (selecione uma licença apropriada se necessário), permitindo o uso e a modificação sem restrições.
 
----
-
-Este é um exemplo de README que fornece informações básicas sobre o projeto, descreve sua estrutura e fornece instruções de uso. Ajuste conforme necessário para refletir qualquer detalhe específico do projeto que não abordei.
