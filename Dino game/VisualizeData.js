@@ -62,9 +62,9 @@ function showBrain(inputHidden, hiddenOutput){
 				ctx.beginPath();
 				ctx.lineWidth = Math.abs(hiddenOutput[j][i]);
 				if(hiddenOutput[j][i] > 0){
-					ctx.strokeStyle = 'blue';
+					ctx.strokeStyle = 'green';
 				}else{
-					ctx.strokeStyle = 'red';
+					ctx.strokeStyle = 'yellow';
 				}
 				y = 35;
 				ctx.moveTo(hiddenX + neuronR, y + neuronR + i*incrememt);
@@ -93,7 +93,7 @@ function showBrain(inputHidden, hiddenOutput){
 		y += incrememt;
 	}
 	
-	ctx.fillText("Distance To Next Obstacle", 275, 45);
+	ctx.fillText("Distance To Next Obstacle", 270, 45);
 	ctx.fillText("Height Of Obstacle", 320, 85);
 	ctx.fillText("Width Of Obstacle", 327, 125);
 	ctx.fillText("Bird Height", 373, 165);

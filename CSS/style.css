@@ -60,3 +60,33 @@ p {
     border-radius: 10px;
     align-items: center;
 }
+
+footer{
+    background-color: #898b6a8f;
+    text-align: center;
+    padding: 10px;
+}
+.icoRedes {
+    margin: 0 10px;
+    color: #c0c0c0; 
+    transition: color 0.3s; 
+}
+
+.icoRedes:hover {
+    color: #4d4d4d; 
+}
+
+
+body::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #4d4d4d; 
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0;   
+    border-radius: 20px;      
+    border: 3px solid #4d4d4d;
+  }
