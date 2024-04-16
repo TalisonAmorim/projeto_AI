@@ -96,7 +96,21 @@ setInterval(() => {
 }, 100);
 
 
-  
+  // Seleciona a imagem e o botão
+const image = document.getElementById('offline-resources-2x');
+const button = document.getElementById('changeImageBtn');
+
+// Adiciona um ouvinte de evento de clique ao botão
+button.addEventListener('click', function() {
+    // Verifica se a imagem atual é a versão do Mario ou não
+    if (image.src.includes('professor')) {
+        // Se a imagem atual for do Mario, muda para a outra imagem
+        image.src = 'images/default_200_percent/offline/200-offline-sprite.png';
+    } else {
+        // Se a imagem atual não for do Mario, muda para a imagem do Mario
+        image.src = 'images/default_200_percent/offline/200-offline-sprite-professor.png';
+    }
+});
 
 /* const s = document.createElement('script');
 s.type = 'module';

@@ -314,7 +314,7 @@ body {
   z-index: 2;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .icon {
     filter: invert(1);
   }
@@ -352,4 +352,4 @@ body {
   .slow-speed-option [type=checkbox]:checked + .slow-speed-toggle::before {
     background: var(--google-blue-300);
   }
-}
+} */
