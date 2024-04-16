@@ -8,6 +8,7 @@ bestScoreElement.textContent = `${SAMPLES}`;
 const game = Runner.instance_; // Instância do jogo "Runner"
 let dinoList = []; // Lista de dinossauros
 let dinoIndex = 0; // Índice do dinossauro atual na lista
+let generation = 0
 
 let bestScore = 0; // Melhor pontuação encontrada durante o treinamento
 let bestRNA = null; // Melhor RNA (rede neural) encontrada durante o treinamento
@@ -21,6 +22,10 @@ function fillDinoList () {
     if (i > 0) dinoList[i].mutate(0.2); // Mutação na RNA dos dinossauros, exceto o primeiro
   }
   console.log('Dino list created!');
+  generation ++
+  // Atualiza o elemento HTML com o novo valor de bestScore
+  const bestScoreElement = document.getElementById('generation'); // Substitua 'bestScore' pelo ID do seu elemento
+  bestScoreElement.textContent = `${generation}`;
 }
 
 setTimeout(() => {
@@ -47,7 +52,7 @@ setInterval(() => {
     dinoIndex++;
 
     // Atualiza o elemento HTML com o novo valor de bestScore
-  const bestScoreElement = document.getElementById('dinoList'); // Substitua 'bestScore' pelo ID do seu elemento
+  const bestScoreElement = document.getElementById('dinoIndex'); // Substitua 'bestScore' pelo ID do seu elemento
   bestScoreElement.textContent = `${dinoIndex}`;
 
     if (dinoIndex === SAMPLES) { // Se todos os dinossauros foram avaliados, preenche a lista novamente
