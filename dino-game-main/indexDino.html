@@ -13,7 +13,20 @@
   <script type="module" src="../script.js"></script>
   
 </head>
-<body id="t" class="neterror">
+
+
+<body id="t" class="neterror" style="color: black; font-family: 'OPixel', Times, serif;">
+  <div style="display: flex; justify-content: space-between;">
+    <div style="flex: 1;">
+        <p style="margin: 10px;">Dino List: <span id="dinoList" style="color: blue;">0</span></p>
+        <p style="margin: 10px;">Best Score: <span id="bestScore" style="color: blue;">0</span></p>
+    </div>
+    <div style="flex: 1; text-align: right;">
+        <p style="margin: 10px;">Samples: <span id="samples" style="color: blue;"></span></p>
+        <p style="margin: 10px;">Rate: <span id="rate" style="color: blue;"></span></p>
+    </div>
+</div>
+  
   <div id="main-frame-error" class="interstitial-wrapper">
     <div id="main-content">
       <div class="icon icon-offline"></div>

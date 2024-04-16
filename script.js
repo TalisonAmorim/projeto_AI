@@ -2,7 +2,9 @@ import utils from './utils.js';
 import RNA from './RNA.js';
 import controls from './controls.js';
 
-const SAMPLES = 10; // Número de amostras (agentes) no algoritmo genético
+const SAMPLES = 2; // Número de amostras (agentes) no algoritmo genético
+const bestScoreElement = document.getElementById('samples'); // Substitua 'bestScore' pelo ID do seu elemento
+bestScoreElement.textContent = `${SAMPLES}`;
 const game = Runner.instance_; // Instância do jogo "Runner"
 let dinoList = []; // Lista de dinossauros
 let dinoIndex = 0; // Índice do dinossauro atual na lista
@@ -36,8 +38,17 @@ setInterval(() => {
       bestScore = dino.score;
       bestRNA = dino.save(); // Salva a RNA do dinossauro com a melhor pontuação
       console.log('bestScore:', bestScore);
+
+      // Atualiza o elemento HTML com o novo valor de bestScore
+      const bestScoreElement = document.getElementById('bestScore'); // Substitua 'bestScore' pelo ID do seu elemento
+      bestScoreElement.textContent = `${bestScore.toFixed(2)}...`;
+
     }
     dinoIndex++;
+
+    // Atualiza o elemento HTML com o novo valor de bestScore
+  const bestScoreElement = document.getElementById('dinoList'); // Substitua 'bestScore' pelo ID do seu elemento
+  bestScoreElement.textContent = `${dinoIndex}`;
 
     if (dinoIndex === SAMPLES) { // Se todos os dinossauros foram avaliados, preenche a lista novamente
       fillDinoList();

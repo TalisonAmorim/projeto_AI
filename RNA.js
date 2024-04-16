@@ -10,6 +10,11 @@ function randomRange(min, max) {
     // Calcula um valor intermediário entre 'a' e 'b' com base no fator 't'
     return a + (b - a) * t;
   }
+
+const avaliar = 0.2
+
+const bestScoreElement = document.getElementById('rate'); // Substitua 'bestScore' pelo ID do seu elemento
+      bestScoreElement.textContent = `${avaliar}`;
   
   // Vamos criar a definição da classe Neuron (Neurônio)
   class Neuron {
@@ -40,7 +45,7 @@ function randomRange(min, max) {
     }
   
     // Função que realiza mutação nos pesos e no viés do neurônio
-    mutate(rate = 1) {
+    mutate(rate = avaliar) {
       this.weightList = this.weightList.map((w) => {
         // Faz uma mudança nos pesos com base na taxa 'rate'
         return lerp(w, randomRange(-1, 1), rate);
