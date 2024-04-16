@@ -82,16 +82,16 @@ setInterval(() => {
     const height = Math.tanh(105 - obstacle.y); // Calcula a altura relativa do obstáculo
 
     // Processa as informações no dinossauro atual
-    const [jump, crounch] = dino.compute([
+    const [jump, crouch] = dino.compute([
       distance,
       speed,
       height,
     ]);
 
     // Executa as ações com base nas probabilidades calculadas
-    if (jump === crounch) return; // Se a probabilidade de salto e agachamento forem iguais, nenhuma ação é tomada
+    if (jump === crouch) return; // Se a probabilidade de salto e agachamento forem iguais, nenhuma ação é tomada
     if (jump) controls.dispatch('jump'); // Se a probabilidade de salto for verdadeira, o dinossauro executa um salto
-    if (crounch) controls.dispatch('crounch'); // Se a probabilidade de agachamento for verdadeira, o dinossauro se agacha
+    if (crouch) controls.dispatch('crouch'); // Se a probabilidade de agachamento for verdadeira, o dinossauro se agacha
   }
 }, 100);
 

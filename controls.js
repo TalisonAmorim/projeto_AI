@@ -1,8 +1,12 @@
 export default {
-    jump: new KeyboardEvent('keydown', { key: ' ', keyCode: 32 }), // Observação: você pode querer usar ' ' em vez de 'Space'
-    
+    // Evento para pular (jump)
+    jump: new KeyboardEvent('keydown', { key: ' ', keyCode: 32 }),
+
+    // Evento para agachar (crouch)
+    crouch: new KeyboardEvent('keydown', { key: 'ArrowDown', keyCode: 40 }), 
+
     dispatch(event) {
-        // Verifique se this[event] existe antes de tentar dispará-lo
+        // Verifica se this[event] existe antes de tentar dispará-lo
         if (this[event]) {
             document.dispatchEvent(this[event]);
         } else {
