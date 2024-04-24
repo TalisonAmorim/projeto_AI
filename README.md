@@ -75,3 +75,6 @@ Se você encontrar erros ou quiser melhorar este projeto, sinta-se à vontade pa
 
 Este projeto é de domínio público ou licenciado sob uma licença permissiva (selecione uma licença apropriada se necessário), permitindo o uso e a modificação sem restrições.
 
+## Visualização do Projeto
+
+O projeto pode ser visualizado [aqui](https://projeto-ai.vercel.app/).
